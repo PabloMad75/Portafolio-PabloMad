@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400;1,900&display=swap');
+
+:root {
+  --primary-color: #00B8A9;
+  --secondary-color: #186F65;
+  --text-color: white;
+  --hover-color: #ffc107;
+  --background-color: #f4f4f4;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+}
+
+.header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo img {
+  max-width: 100px;
+  /* Ajusta el ancho máximo de tu logo según tus necesidades */
+  height: auto;
+}
+
+.nav ul {
+  list-style-type: none;
+  /* Elimina los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+  /* Espaciado entre elementos de la lista */
+}
+
+.nav a {
+  text-decoration: none;
+  /* Elimina el subrayado predeterminado */
+  color: var(--text-color);
+  /* Establece el color del texto para los enlaces */
+  font-weight: bold;
+  /* Puedes ajustar el peso de la fuente según tus preferencias */
+  font-size: 16px;
+  /* Puedes ajustar el tamaño de la fuente según tus preferencias */
+}
+
+nav a:hover {
+  color: var(--hover-color);
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.menu-icon {
+  font-size: 2.5rem;
+  color: var(--background-color);
+  cursor: pointer;
+  display: none;
+}
+
+.main {
+  background-color: var(--secondary-color);
+}
+
+.custom-heading-2xl {
+  font-size: 1.5rem;
+  /* Tamaño de fuente personalizado para el encabezado */
+}
+
+.custom-icon {
+  width: 100px;
+  /* Ancho personalizado para los iconos */
+  height: 100px;
+  /* Altura personalizada para los iconos */
+  background-size: cover;
+  border-radius: 8px;
+  /* Bordes redondeados */
+  margin-right: 20px;
+  /* Espaciado entre los iconos */
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* height: 50vh; */
+  padding: 20px;
+}
+
+/* #contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+} */
+
+
+#descripcion {
+  text-align: center;
+}
+
+.parrafo-descripcion{
+  padding: 20px;
+}
+
+#imagen {
+  display: flex;
+  justify-content: center;
+  max-width: 100%; /* Cambié de 60% a 100% */
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#imagen img {
+  width: 70%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+/* Habilidades */
+
+#habilidades{
+  /* background-color: #c3ecb4; */
+  padding: 20px;
+}
+
+/* SECCION PORTFOLIO */
+.portfolio {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.portfolio h2 {
+  font-size: 48px;
+  font-family: 'font-family: ' Roboto';';
+  text-align: center;
+  padding: 20px 0;
+}
+
+.portfolio .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio .galeria .proyecto {
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.portfolio .galeria .proyecto img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio .galeria .proyecto a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.portfolio .galeria .proyecto .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+  opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+  margin-bottom: 0px;
+}
+
+.btn-container {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 400;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  color: var(--hover-color) !important;
+  background-color: white;
+}
+
+.btn-color-1:hover {
+  background-color: white;
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(180, 255, 255) 0.1rem solid;
+}
+.btn-color-3 {
+  background-color: var(--primary-color);
+  color:var(--text-color)
+}
+
+.btn-color-3:hover {
+  background-color: #e54d26;
+  border: rgb(20, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* .fondo{
+  background-color: #e54d26 !important;
+  border: #e54d26 solid !important;
+} */
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 40px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.iconos-rrss {
+  font-size: 2.5rem;
+}
+
+/* Estilos para los iconos de tecnologías */
+
+.fab {
+  font-size: 2.5rem; /* Tamaño de fuente personalizado */
+  margin-right: 10px; /* Espaciado entre los iconos */
+}
+
+/* Colores personalizados para cada tecnología */
+
+.fa-html5 {
+  color: #e54d26; /* Color de HTML5 */
+}
+
+.fa-css3 {
+  color: #2965f1; /* Color de CSS3 */
+}
+
+.fa-js {
+  color: #f7df1e; /* Color de JavaScript */
+}
+
+.fa-envira {
+  color: #13aa52; /* Color de MongoDB */
+}
+
+.fa-node {
+  color: #6cc24a; /* Color de Node.js */
+}
+
+.fa-react {
+  color: #61dafb; /* Color de React */
+}
+
+.fa-node-js {
+  color: #000000; /* Color de Express */
+}
+
+.fa-database {
+  color: #00758f; /* Color de SQL */
+}
+
+.fa-php {
+  color: #8892bf; /* Color de PHP */
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 768px) {
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  nav .menu.show {
+    display: flex;
+  }
+
+  nav .menu li {
+    margin: 10px 0;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  .portfolio .galeria {
+    display: block;
+    width: 100%;
+  }
+
+  .portfolio .galeria .proyecto {
+    max-width: 100%;
+  }
+
+  .portfolio .galeria .proyecto img {
+    width: 100%;
+  }
+
+  .contacto .fila {
+    display: block;
+  }
+
+  .contacto .fila .col {
+    width: 100%;
+  }
+
+  .perfil {
+    flex-direction: column;
+  }
+  #habilidades .contact-info-container {
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los íconos horizontalmente */
+  }
+
+  #habilidades .contact-info-container i {
+    flex: 0 0 auto; /* Permite que los íconos ocupen su tamaño natural */
+    margin: 0.5rem; /* Espacio entre los íconos */
+  }
+}
