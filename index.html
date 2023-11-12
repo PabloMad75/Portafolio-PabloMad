@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desarrollador web apasionado en constante aprendizaje, especializado en HTML, CSS, JavaScript, React, Node.js, MongoDB, y más. Explora mi portafolio y contáctame para colaboraciones.">
-    <meta name="keywords" content="desarrollador web, programación, HTML, CSS, JavaScript, React, Node.js, MongoDB, portafolio, contacto">
-    <meta name="author" content="Pablo Madrid">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Portafolio Pablo Madrid">
-    <meta property="og:description" content="Desarrollador web apasionado en constante aprendizaje, especializado en HTML, CSS, JavaScript, React, Node.js, MongoDB, y más. Explora mi portafolio y contáctame para colaboraciones.">
-    <meta property="og:image" content="./assets/young-paul.jpg">
-    <meta property="og:url" content="URL_DE_TU_PAGINA">
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title><title>Pablo Madrid - Desarrollador Web | Portafolio y Proyectos</title>
-  </title>
-  </head>
-<body>
-  <header>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Desarrollador web apasionado en constante aprendizaje, especializado en HTML, CSS, JavaScript, React, Node.js, MongoDB, y más. Explora mi portafolio y contáctame para colaboraciones.">
+  <meta name="keywords"
+    content="desarrollador web, programación, HTML, CSS, JavaScript, React, Node.js, MongoDB, portafolio, contacto">
+  <meta name="author" content="Pablo Madrid">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Portafolio Pablo Madrid">
+  <meta property="og:description"
+    content="Desarrollador web apasionado en constante aprendizaje, especializado en HTML, CSS, JavaScript, React, Node.js, MongoDB, y más. Explora mi portafolio y contáctame para colaboraciones.">
+  <meta property="og:image" content="./assets/young-paul.jpg">
+  <meta property="og:url" content="URL_DE_TU_PAGINA">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>
+    <title>Pablo Madrid - Desarrollador Web | Portafolio y Proyectos</title>
+  </title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Logo y nombre de la empresa -->
+    <section class="logo">
+      <img src="./assets/favicon.png" alt="Logo web Pablo Madrid">
+      <!-- <h1>PabloMad</h1> -->
+    </section>
+    <!-- Opciones de navegación -->
+    <nav class="nav">
+      <div class="menu-icon">&#9776;</div>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
+    <!-- sección Perfil -->
+    <section class="perfil" id="perfil">
+      <div id="descripcion">
+        <h1 class="title">¡Hola! Soy Pablo Madrid</h1>
+        <p class="parrafo-descripcion">un apasionado desarrollador web en constante aprendizaje. Mi viaje en el mundo de
+          la programación comenzó con
+          una curiosidad incesante y un deseo profundo de crear soluciones impactantes en la web.</p>
+        <div class="btn-container">
+          <a class="btn btn-color-2 project-btn" href="./assets/curriculumejemplo.pdf" target="_blank">Descarga CV</a>
+        </div>
+      </div>
+      <div id="imagen">
+        <img src="./assets/young-paul.jpg" alt="Tu Foto">
+      </div>
+    </section>
+    <!-- Sección de Habilidades y Conocimientos -->
+    <article id="habilidades">
+      <h3 class="title">Habilidades</h3>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fab fa-html5" title="HTML5"></i>
+          <i class="fab fa-css3" title="CSS3"></i>
+          <i class="fab fa-js" title="JavaScript"></i>
+          <i class="fab fa-envira" title="MongoDB"></i>
+          <i class="fab fa-node" title="Node.js"></i>
+          <i class="fab fa-react" title="React"></i>
+          <i class="fab fa-node-js" title="Express"></i>
+          <i class="fas fa-database" title="SQL"></i>
+          <i class="fab fa-php" title="PHP"></i>
+        </div>
+      </div>
+    </article>
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
       <div class="contenido-seccion">
         <h2 class="title">Portafolio</h2>
         <div class="galeria">
           <div class="proyecto">
-            <!-- <a href="https://pablomad75.github.io/001_CRUD_LocalStorage/" target="_blank"> -->
             <img src="./assets/landing-CRUD-basico.jpg" alt="CRUD básico usando LocalStorage">
             <div class="overlay">
               <h3>CRUD básico</h3>
@@ -104,28 +156,21 @@
       <h2 class="title">Contáctame</h2>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/github.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <img src="./assets/github.png" alt="Email icon" class="icon contact-icon email-icon" />
           <p><a href="https://github.com/pablomad75">Github</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon email-icon"
-          />
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon email-icon" />
           <p><a href="https://www.linkedin.com">LinkedIn</a></p>
         </div>
       </div>
     </section>
   </main>
-   <!-- Footer -->
-   <footer class="footer">
+  <!-- Footer -->
+  <footer class="footer">
     <span>&copy; Todos los derechos reservados | Pagina creada por: <strong>Pablo Madrid</strong>
   </footer>
   <script src="./js/script.js"></script>
 </body>
+
 </html>
