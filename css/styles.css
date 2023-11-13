@@ -112,14 +112,17 @@ nav a:hover {
   text-align: center;
 }
 
-.parrafo-descripcion{
+.parrafo-descripcion {
+  font-size: large;
   padding: 20px;
+  font-family: monospace;
 }
 
 #imagen {
   display: flex;
   justify-content: center;
-  max-width: 100%; /* Cambié de 60% a 100% */
+  max-width: 100%;
+  /* Cambié de 60% a 100% */
   margin: 0 auto;
   border-radius: 8px;
   overflow: hidden;
@@ -131,9 +134,10 @@ nav a:hover {
   display: block;
   border-radius: 50%;
 }
+
 /* Habilidades */
 
-#habilidades{
+#habilidades {
   /* background-color: #c3ecb4; */
   padding: 20px;
 }
@@ -252,9 +256,10 @@ nav a:hover {
 .btn-color-2:hover {
   border: rgb(180, 255, 255) 0.1rem solid;
 }
+
 .btn-color-3 {
   background-color: var(--primary-color);
-  color:var(--text-color);
+  color: var(--text-color);
   margin-bottom: 15px;
 }
 
@@ -352,46 +357,57 @@ nav a:hover {
 /* Estilos para los iconos de tecnologías */
 
 .fab {
-  font-size: 2.5rem; /* Tamaño de fuente personalizado */
-  margin-right: 10px; /* Espaciado entre los iconos */
+  font-size: 2.5rem;
+  /* Tamaño de fuente personalizado */
+  margin-right: 10px;
+  /* Espaciado entre los iconos */
 }
 
 /* Colores personalizados para cada tecnología */
 
 .fa-html5 {
-  color: #e54d26; /* Color de HTML5 */
+  color: #e54d26;
+  /* Color de HTML5 */
 }
 
 .fa-css3 {
-  color: #2965f1; /* Color de CSS3 */
+  color: #2965f1;
+  /* Color de CSS3 */
 }
 
 .fa-js {
-  color: #f7df1e; /* Color de JavaScript */
+  color: #f7df1e;
+  /* Color de JavaScript */
 }
 
 .fa-envira {
-  color: #13aa52; /* Color de MongoDB */
+  color: #13aa52;
+  /* Color de MongoDB */
 }
 
 .fa-node {
-  color: #6cc24a; /* Color de Node.js */
+  color: #6cc24a;
+  /* Color de Node.js */
 }
 
 .fa-react {
-  color: #61dafb; /* Color de React */
+  color: #61dafb;
+  /* Color de React */
 }
 
 .fa-node-js {
-  color: #000000; /* Color de Express */
+  color: #000000;
+  /* Color de Express */
 }
 
 .fa-database {
-  color: #00758f; /* Color de SQL */
+  color: #00758f;
+  /* Color de SQL */
 }
 
 .fa-php {
-  color: #8892bf; /* Color de PHP */
+  color: #8892bf;
+  /* Color de PHP */
 }
 
 /* Estilos responsivos */
@@ -444,13 +460,17 @@ nav a:hover {
   .perfil {
     flex-direction: column;
   }
+
   #habilidades .contact-info-container {
     flex-wrap: wrap;
-    justify-content: center; /* Centra los íconos horizontalmente */
+    justify-content: center;
+    /* Centra los íconos horizontalmente */
   }
 
   #habilidades .contact-info-container i {
-    flex: 0 0 auto; /* Permite que los íconos ocupen su tamaño natural */
-    margin: 0.5rem; /* Espacio entre los íconos */
+    flex: 0 0 auto;
+    /* Permite que los íconos ocupen su tamaño natural */
+    margin: 0.5rem;
+    /* Espacio entre los íconos */
   }
 }
